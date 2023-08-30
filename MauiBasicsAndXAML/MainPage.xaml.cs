@@ -20,5 +20,10 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private void onActionButtonPressed(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new ActionPage());
+    }
 }
 

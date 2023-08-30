@@ -6,6 +6,8 @@
 
     <ScrollView>
         <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Button Text="Action Page" Pressed="onActionButtonPressed"/>
+
             <Frame>
                 <Label Text="This is a frame. Looks Nice"/>
             </Frame>
