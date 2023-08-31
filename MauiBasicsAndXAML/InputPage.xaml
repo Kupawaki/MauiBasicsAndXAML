@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBasicsAndXAML.InputPage"
+             Title="InputPage">
+    <VerticalStackLayout>
+        <Entry Placeholder="This is an Entry"/>
+        <Editor Placeholder="This is an editor, useful for multi-line input" AutoSize="TextChanges"/>
+        <HorizontalStackLayout>
+            <CheckBox/>
+            <Label Text="Checkbox 1"/>
+            <CheckBox/>
+            <Label Text="Checkbox 2"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout>
+            <RadioButton Content="Option 1" GroupName="1"/>
+            <RadioButton Content="Option 2" GroupName="1"/>
+            <RadioButton Content="Option 1B" GroupName="2"/>
+            <RadioButton Content="Option 2B" GroupName="2"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Slider x:Name="Slider" Minimum="0" Maximum="100" ValueChanged="Slider_ValueChanged"/>
+            <Label x:Name="SliderLabel"/>
+        </VerticalStackLayout>
+        <Frame>
+            <DatePicker/>
+        </Frame>
+        <Frame>
+            <TimePicker/>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
